@@ -15,7 +15,7 @@ import mg.itu.rajohnson.tpcustomerrajohnson.entities.Customer;
  *
  * @author LENOVO
  */
-@Named
+@Named(value = "customerDetailsBean")
 @ViewScoped
 public class CustomerDetailsBean implements Serializable {
 

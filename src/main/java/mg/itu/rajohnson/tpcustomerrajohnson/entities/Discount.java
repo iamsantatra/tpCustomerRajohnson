@@ -26,7 +26,9 @@ import jakarta.persistence.Table;
 @NamedQueries({
     @NamedQuery(name = "Discount.findAll", query = "SELECT d FROM Discount d"),
     @NamedQuery(name = "Discount.findByCode", query = "SELECT d FROM Discount d WHERE d.code = :code"),
-    @NamedQuery(name = "Discount.findByRate", query = "SELECT d FROM Discount d WHERE d.rate = :rate")})
+    @NamedQuery(name = "Discount.findByRate", query = "SELECT d FROM Discount d WHERE d.rate = :rate"),
+    @NamedQuery(name = "Discount.findAllByRateAsc", query = "SELECT d FROM Discount d ORDER BY d.rate ASC")
+})
 public class Discount implements Serializable {
 
     private static final long serialVersionUID = 1L;
